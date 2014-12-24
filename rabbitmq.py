@@ -25,7 +25,7 @@ class RabbitMQ(object):
 	def receive_data(self, queue_name):
 		self.channel.queue_declare(queue_name)
 		def callback(ch, method, properties, body):
-			print " [x] Received %r" % (body,)
+			print " Received %r" % (body,)
 		self.channel.basic_consume(callback,queue=queue_name,no_ack=True)
 		self.channel.start_consuming()
 
