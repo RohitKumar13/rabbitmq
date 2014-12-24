@@ -1,6 +1,6 @@
 
 ## rabbitmq.py
-A Python script to send and recieve messages/data from RabbitMQ.
+Python script to send and recieve messages/data from RabbitMQ.
 
 ## Install 
 >sudo apt-get install rabbitmq-server
